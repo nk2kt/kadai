@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+/*end of reset css*/
+
+#description {
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 20px;
+  border-bottom: solid;
+  border-bottom-color: grey;
+}
+
+#nav_bar {
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+
+#nav_links {
+  display: flex;
+  margin-right: auto;
+  list-style: none;
+}
+
+#nav_link {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+}
+
+.strong_pink {
+  color: #e5004e;
+  font-style:normal;
+  font-weight:normal;
+}
