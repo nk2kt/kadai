@@ -2,7 +2,39 @@ body {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
 /*end of reset css*/
+
+#about_ii-deais {
+  background-image: url("../images/main_bg.jpg");
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#foreword > p {
+  margin: 50px 0;
+}
+
+#foreword > img {
+  margin: 40px 0;
+}
+
+.blue_emp {
+  color: #004795;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+#main_container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 #description {
   font-size: 12px;
@@ -37,4 +69,50 @@ body {
   color: #e5004e;
   font-style:normal;
   font-weight:normal;
+}
+/*todo DRY grid */
+#teikyou_kachi_grid_container {
+  display:grid;
+  list-style: none;
+  height: 390px;
+  grid-temprate-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#saiyou_consulting_grid_container {
+  display: grid;
+  list-style: none;
+  width: 960px;
+  height: 530px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: solid #004795;
+  padding: 0;
+  border-width: 1px;
+}
+
+#saiyou_consulting_grid_container > li {
+  text-align: center;
+  margin: 20px;
+}
+
+
+#saiyou_consulting_grid_container > p {
+  text-align: left;
+}
+
+#saiyou_consulting_grid_container > li > h4 {
+  color: #004795;
+}
+
+#jinji_grid_container {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 960px;
+  height: 360px;
+}
+
+#page_footer {
+  background-color: #004795;
+  color: #ffffff;
 }
