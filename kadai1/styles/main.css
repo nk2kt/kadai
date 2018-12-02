@@ -1,11 +1,46 @@
 body {
   margin: 0;
+  line-height: 1.7;
 }
 
+ol, ul {
+  padding: 0;
+}
 li {
   list-style: none;
+  margin 0;
+  padding: 0;
 }
 /*end of reset css*/
+
+#breadcrumb_navigation {
+  font-size: 12px;
+  line-height: 1;
+  margin: 15px 30px;
+}
+
+#breadcrumb_navigation > a {
+  text-decoration: none;
+  color: #004795;
+}
+
+#breadcrumb_navigation > a:hover {
+  text-decoration: underline;
+}
+
+#breadcrumb_navigation > a:visited {
+  text-decoration: none;
+  color:  #004795;
+}
+
+#main_container > h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+#kyoso_img {
+  margin: 60px 0;
+}
 
 #about_ii-deais {
   background-image: url("../images/main_bg.jpg");
@@ -13,6 +48,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 15px 0;
 }
 
 #foreword > p {
@@ -20,11 +56,11 @@ li {
 }
 
 #foreword > img {
-  margin: 40px 0;
+  margin: 55px 0;
 }
 
 .blue_emp {
-  color: #004795;
+  color: var(--blue_color);
   font-size: 20px;
   line-height: 35px;
 }
@@ -34,20 +70,28 @@ li {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  --blue_color: #004795;
 }
 
-#description {
+#ii-deais_description {
   font-size: 12px;
   margin: 0;
-  padding: 10px 20px;
-  border-bottom: solid;
-  border-bottom-color: grey;
+  padding: 10px 30px;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 #nav_bar {
   display: flex;
-  height: 100px;
+  height: 85px;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 3px #e3e3e3;
+}
+
+#nav_bar__logo {
+  margin: 0 30px;
 }
 
 #nav_links {
@@ -70,49 +114,180 @@ li {
   font-style:normal;
   font-weight:normal;
 }
+
+#joho_knowledge_img {
+  margin: 60px 0;
+}
+
+/* flex container */
+#teikyo_kachi_flex_container {
+  display: flex;
+}
+
+#teikyo_kachi_flex_container > li > h3 {
+  font-weight: normal;
+  color: var(--blue_color); 
+}
+
 /*todo DRY grid */
-#teikyou_kachi_grid_container {
+
+.service_container{
+  text-align: left
+}
+
+.service_container--at_jinji {
+  --main_color : #29b6b4;
+}
+
+.service_container--saiyo_consulting {
+  --main_color: #004795; 
+
+}
+
+.service_container--jinji_muke {
+  --main_color: #e5004e;
+}
+
+.service_container > a {
+  color: var(--main_color);
+  text-decoration: none;
+}
+
+.service_container > h3 {
+  font-size: 24px;
+  font-weight: normal;
+  padding: 12px 0;
+  margin:35px 0;
+  border-bottom: solid 1px var(--main_color);
+}
+
+.service_container > .service_container__desc {
+  color: var(--main_color);
+  font-size: 20px;
+  margin: 23px 0;
+}
+
+.grid_container_outer--at_jinji {
+  border: solid 1px #29b6b4;
+  margin: 20px 0;
+}
+
+.grid_container_outer--saiyo_consulting {
+  border: solid 1px #004795;
+  margin: 20px 0;
+  height: 530px;
+}
+
+.service_container__grid_container {
   display:grid;
   list-style: none;
-  height: 390px;
-  grid-temprate-rows: 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
+  font-size: 14px;
+  margin: 30px 0;
+  --inner_border_color: #d6d6d6;
 }
-#saiyou_consulting_grid_container {
-  display: grid;
-  list-style: none;
-  width: 960px;
-  height: 530px;
+
+.service_container__grid_container li > h4 {
+  font-size: 16px;
+  margin: 15px 0;
+}
+.service_container__grid_container--at_jinji {
+  height: 360px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.service_container__grid_container--at_jinji > li:not(:last-of-type) {
+  border-right: solid 1px var(--inner_border_color);
+}
+
+.service_container__grid_container--saiyo_consulting {
+  height: 470px;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  border: solid #004795;
-  padding: 0;
-  border-width: 1px;
 }
 
-#saiyou_consulting_grid_container > li {
+/* saiyo consulting inner borders*/
+.service_container__grid_container--saiyo_consulting > li:nth-of-type(1) {
+  border-bottom: solid 1px var(--inner_border_color);
+}
+.service_container__grid_container--saiyo_consulting > li:nth-of-type(2) {
+  border-left: solid 1px var(--inner_border_color);
+  border-bottom: solid 1px var(--inner_border_color);
+  border-right: solid 1px var(--inner_border_color);
+}
+.service_container__grid_container--saiyo_consulting > li:nth-of-type(3) {
+  border-bottom: solid 1px var(--inner_border_color);
+}
+.service_container__grid_container--saiyo_consulting > li:nth-of-type(5) {
+  border-left: solid 1px var(--inner_border_color);
+  border-right: solid 1px var(--inner_border_color);
+}
+
+.service_container__grid_container--saiyo_consulting > li:nth-child(n+4):nth-child(-n+6) {
+  padding-top: 30px
+}
+
+.service_container__grid_container > li {
   text-align: center;
-  margin: 20px;
+  padding: 0 30px;
+  margin: ;
 }
 
-
-#saiyou_consulting_grid_container > p {
+.service_container__grid_container > p {
   text-align: left;
 }
 
-#saiyou_consulting_grid_container > li > h4 {
-  color: #004795;
+.service_container__grid_container > li > h4 {
+  color: var(--main_color);
 }
 
-#jinji_grid_container {
+#footer_nav_links {
   display: grid;
-  list-style: none;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 960px;
-  height: 360px;
+  margin: 80px;
+  height: 240px;
+  justify-content: space-around;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width: 960px;
+  gap: 1px;
+}
+
+#footer_nav_links > li {
+  height: 100%;
+  align-items: center;
+  background-size: cover;
+  text-align: center;
+}
+
+#footer_nav_links__link--about {
+  background-image: url("../images/about_img.jpg");
+}
+
+#footer_nav_links__link--solutions {
+  background-image: url("../images/solutions_img.jpg");
+}
+
+#footer_nav_links__link--ranking {
+  background-image: url("../images/ranking_img.jpg");
 }
 
 #page_footer {
   background-color: #004795;
+  text-align: center;
+  font-size: 13px;
   color: #ffffff;
+}
+
+#page_footer > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#page_footer > a:hover {
+  text-decoration: underline;
+}
+
+#copyrignt {
+  padding: 15px 0;
+  border-top: solid 1px #154880;
 }

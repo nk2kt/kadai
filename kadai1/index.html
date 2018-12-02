@@ -6,12 +6,12 @@
     <link href="./styles/main.css" rel="stylesheet">
   </head>
   <body>
-    <p id="description">
+    <p id="ii-deais_description">
     採用における課題を「情報発信」で解決する - ii-deais（イーディアス） -
     </p>
 
     <nav id="nav_bar">
-      <div>
+      <div id="nav_bar__logo">
         <img id="title_logo_w" src="images/logo_wide.png" alt="株式会社 イーディアス">
       </div>
       <ol id="nav_links">
@@ -23,7 +23,7 @@
       </ol>
     </nav>
     <nav>
-      <div id="breadcrumb_navigation">株式会社イーディアス ホーム> イーディアスについて</div>
+      <div id="breadcrumb_navigation"><a href="">株式会社イーディアス ホーム</a> > イーディアスについて</div>
     </nav>
 
     <h1 id="about_ii-deais"><img src="./images/page_ttl.png" alt="イーディアスについて about"></h1>
@@ -67,11 +67,11 @@
       <img src="./images/ttl_dots.png" alt="deco_dots">
 
       <p>
-        イーディアスは人事の皆様との共創によって提供価値を高めていきます。
+      イーディアスは人事の皆様との共創によって提供価値を高めていきます。
       </p>
 
-      <img src="./images/img03.png" alt="共創">
-      <ul id="teikyou_kachi_grid_container">
+      <img id="kyoso_img" src="./images/img03.png" alt="共創">
+      <ul id="teikyo_kachi_flex_container">
         <li>
           <img src="./images/img04.jpg" alt="イメージ">
           <h3>
@@ -102,139 +102,167 @@
         イーディアスのサービス
       </h2>
 
-      <img src="./images/ttl_dots.png" alt="deco_dots">
+      <div>
+        <img src="./images/ttl_dots.png" alt="deco_dots">
+      </div>
 
-      <img src="./images/img07.png" alt="情報ナレッジ">
+      <div id="joho_knowledge_img">
+        <img src="./images/img07.png" alt="情報ナレッジ">
+      </div>
 
-      <ul>
-        <li>
+      <ul id="service_list_container">
+        <li class="service_container service_container--at_jinji">
           <h3>
+            <img src="./images/icon01.png" alt="icon">
             人と人をつなぐ、人事のための総合メディア ＠人事
           </h3>
-          「情報」と出会う　～人事が必要とする情報発信～
+          <div class="service_container__desc">
+            「情報」と出会う　～人事が必要とする情報発信～
+          </div>
 
           フリーペーパー＆Webサイト「＠人事」は、人事担当者が知りたい情報を知りたいときに手に入れられるよう、具体的な施策やナレッジを集約させた、新しいメディアです。旬なニュースをはじめ、他社の成功事例や人事担当者のスキルアップ術、魅力的な人事向けサービスといった有益な情報を人事担当者にお届けします。
+          <img src="./images/text_img.png" alt="@人事">
 
-          <ul id="jinji_grid_container">
-            <li>
-              <img src="./images/icon10.png" alt="アイコン">
-              <h4>
-                ＠人事<br>
-                フリーペーパー
-              </h4>
-              人事担当者に役立つ情報を集めたフリーペーパーです。企業の成功事例や人事担当者の対談、著名人のコラムなどを掲載しています。
-            </li>
+          <div class="grid_container_outer--at_jinji">
+            <ul class="service_container__grid_container service_container__grid_container--at_jinji">
+              <li>
+                <img src="./images/icon10.png" alt="アイコン">
+                <h4>
+                  ＠人事<br>
+                  フリーペーパー
+                </h4>
+                人事担当者に役立つ情報を集めたフリーペーパーです。企業の成功事例や人事担当者の対談、著名人のコラムなどを掲載しています。
+              </li>
 
-            <li>
-              <img src="./images/icon07.png" alt="アイコン">
-              <h4>
-                ＠人事<br>
-                ポータルサイト
-              </h4>
-              フリーペーパーと同様に、人事に役立つ情報を発信します。配信記事だけでなく、＠人事が主催するセミナー受講や講師募集への応募、サービスへの問い合わせが可能です。
-            </li>
+              <li>
+                <img src="./images/icon07.png" alt="アイコン">
+                <h4>
+                  ＠人事<br>
+                  ポータルサイト
+                </h4>
+                フリーペーパーと同様に、人事に役立つ情報を発信します。配信記事だけでなく、＠人事が主催するセミナー受講や講師募集への応募、サービスへの問い合わせが可能です。
+              </li>
 
-            <li>
-              <img src="./images/icon08.png" alt="アイコン">
-              <h4>
-                人事向け<br>
-                サービスガイド
-              </h4>
-              ＠人事と提携する、人事向けのサービスを提供する会社を一覧で掲載しています。あらゆるサービスを網羅し、選び方や利用方法もご相談いただけます。
-            </li>
+              <li>
+                <img src="./images/icon08.png" alt="アイコン">
+                <h4>
+                  人事向け<br>
+                  サービスガイド
+                </h4>
+                ＠人事と提携する、人事向けのサービスを提供する会社を一覧で掲載しています。あらゆるサービスを網羅し、選び方や利用方法もご相談いただけます。
+              </li>
 
-            <li>
-              <img src="./images/icon09.png" alt="アイコン">
-              <h4>
-                セミナー<br>
-                ＆交流会
-              </h4>
-              ＠人事では、年に4回セミナーと交流会を開催しています。実施セミナーは＠人事ポータルサイトで動画配信し、編集したDVDの販売も行います。
-            </li>
-          </ul>
+              <li>
+                <img src="./images/icon09.png" alt="アイコン">
+                <h4>
+                  セミナー<br>
+                  ＆交流会
+                </h4>
+                ＠人事では、年に4回セミナーと交流会を開催しています。実施セミナーは＠人事ポータルサイトで動画配信し、編集したDVDの販売も行います。
+              </li>
+            </ul>
+          </div>
 
-          ＠人事 Webサイトはこちら
+          <img src="./images/icon02.png" alt="icon">
+          <a href="">
+            ＠人事 Webサイトはこちら
+          </a>
+          <img src="./images/icon03.png" alt="icon">
 
         </li>
 
-        <li>
+        <li class="service_container service_container--saiyo_consulting">
           <h3>
+            <img src="./images/ttl_icon01.png" alt="icon">
             採用コンサルティング
           </h3>
-          「仕組み」と出会う　～採用課題解決のための仕組みづくり～
+          <div class="service_container__desc">
+            「仕組み」と出会う　～採用課題解決のための仕組みづくり～
+          </div>
 
           人事の業務領域の中で大きな割合を占める「採用」に特化したサービスです。イーディアスの採用コンサルタントがクライアントのパートナーとなり、年間単位で最適な採用活動をサポートするサービスです。
 
-          <ul id="saiyou_consulting_grid_container">
-            <li>
-              <img src="./images/icon12.png" alt="アイコン">
-              <h4>
-                採用業務アウトソーシング
-              </h4>
-              <p>
-              ホスピタリティと状況判断力をもって、採用の判断を除くすべて、または一部の業務を代行し、担当者が中核業務に集中できるよう支援します。
-              </p>
-            </li>
+          <div class="grid_container_outer--saiyo_consulting">
+            <ul class="service_container__grid_container service_container__grid_container--saiyo_consulting">
+              <li>
+                <img src="./images/icon12.png" alt="アイコン">
+                <h4>
+                  採用業務アウトソーシング
+                </h4>
+                <p>
+                ホスピタリティと状況判断力をもって、採用の判断を除くすべて、または一部の業務を代行し、担当者が中核業務に集中できるよう支援します。
+                </p>
+              </li>
 
-            <li>
-              <img src="./images/icon11.png" alt="アイコン">
-              <h4>
-                情報提供力
-              </h4>
-              イーディアスがこれまでのコンサルティング経験や人事向け情報誌の制作で獲得した、各社の状況と成功事例をご提供します。
-            </li>
+              <li>
+                <img src="./images/icon11.png" alt="アイコン">
+                <h4>
+                  情報提供力
+                </h4>
+                イーディアスがこれまでのコンサルティング経験や人事向け情報誌の制作で獲得した、各社の状況と成功事例をご提供します。
+              </li>
 
-            <li>
-              <img src="./images/icon13.png" alt="アイコン">
-              <h4>
-                採用ツール制作
-              </h4>
-              コンサルティングによる深い理解に基づいて採用ツールを制作するため、企業の価値や魅力を正確に伝えられ、効率とクオリティも両立できます。
-            </li>
+              <li>
+                <img src="./images/icon13.png" alt="アイコン">
+                <h4>
+                  採用ツール制作
+                </h4>
+                コンサルティングによる深い理解に基づいて採用ツールを制作するため、企業の価値や魅力を正確に伝えられ、効率とクオリティも両立できます。
+              </li>
 
-            <li>
-              <img src="./images/icon15.png" alt="アイコン">
-              <h4>
-                仕組化
-              </h4>
-              イーディアスが多くの成功事例から得た採用活動の「仕組み」を利用することで、経験や知識がなくとも運用できるよう支援します。
-            </li>
+              <li>
+                <img src="./images/icon15.png" alt="アイコン">
+                <h4>
+                  仕組化
+                </h4>
+                イーディアスが多くの成功事例から得た採用活動の「仕組み」を利用することで、経験や知識がなくとも運用できるよう支援します。
+              </li>
 
-            <li>
-              <img src="./images/icon14.png" alt="アイコン">
-              <h4>
-                効率化と省力化
-              </h4>
-              データやテンプレートの整理、アウトソース活用などで業務の省力化・効率化を図り、“採用担当者しかできないこと”に集中できる環境をご用意します。
-            </li>
+              <li>
+                <img src="./images/icon14.png" alt="アイコン">
+                <h4>
+                  効率化と省力化
+                </h4>
+                データやテンプレートの整理、アウトソース活用などで業務の省力化・効率化を図り、“採用担当者しかできないこと”に集中できる環境をご用意します。
+              </li>
 
-            <li>
-              <img src="./images/icon16.png" alt="アイコン">
-              <h4>
-                改善と施策実行
-              </h4>
-              定期訪問によって企業の細かな変化を読み取り、“想定外の出来事”があっても、迅速かつ柔軟に次の策を講じます。
-            </li>
-          </ul>
-          採用コンサルティングについて詳しくはこちら
+              <li>
+                <img src="./images/icon16.png" alt="アイコン">
+                <h4>
+                  改善と施策実行
+                </h4>
+                定期訪問によって企業の細かな変化を読み取り、“想定外の出来事”があっても、迅速かつ柔軟に次の策を講じます。
+              </li>
+            </ul>
+          </div>
+          <img src="./images/icon05.png" alt="icon">
+          <a href="">
+            採用コンサルティングについて詳しくはこちら
+          </a>
         </li>
 
 
-        <li>
+        <li class="service_container service_container--jinji_muke">
           <h3>
+            <img src="./images/icon06.png" alt="icon">
             人事向けサービス総合代理店
           </h3>
-          「サービス」と出会う　～人事が必要とするサービスの紹介～
+          <div class="service_container__desc">
+            「サービス」と出会う　～人事が必要とするサービスの紹介～
+          </div>
 
           イーディアスが「＠人事」の制作を通じて出会った、「人事に役立つ」サービスを提供する会社との橋渡しを行います。人事と情報との出会いを創造すること。どのサービスを利用したらいいか、自分たちでやるべき範囲はどこか、などの相談に応じ、人事担当者の省力化と効率化を支援します。
         </li>
 
       </ul>
     </div>
-    <ul>
-      <li>イーディアスについて ABOUT</li>
-      <li>ソリューションを探す SOLUTION</li>
-      <li>採用サイトランキング RANKING</li>
+    <ul id="footer_nav_links">
+      <li id="footer_nav_links__link--about"><img src="./images/about_txt.png" alt="イーディアスについて ABOUT">
+      </li>
+      <li id="footer_nav_links__link--solutions"><img src="./images/solutions_txt.png" alt="ソリューションを探す SOLUTION">
+      </li>
+      <li id="footer_nav_links__link--ranking"><img src="./images/ranking_txt.png" alt="採用サイトランキング RANKING">
+      </li>
     </ul>
     PAGE TOP
     イーディアスのサービスについてのお問い合わせ・資料請求はこちら
@@ -245,11 +273,20 @@
     フォームからのお問い合わせ
     <footer id="page_footer">
 
-      ホーム イーディアスについて ソリューションのご紹介 採用サイトランキング 資料請求・お問い合わせ 
+      <a href="">ホーム </a>
+      <a href="">イーディアスについて </a>
+      <a href="">ソリューションのご紹介 </a>
+      <a href="">採用サイトランキング </a>
+      <a href="">資料請求・お問い合わせ </a>
+      <br>
+      <a href="">会社概要 </a>
+      <a href="">FAQ </a>
+      <a href="">個人情報保護方針 </a>
+      <a href="">サイトマップ </a>
 
-      会社概要 FAQ 個人情報保護方針 サイトマップ 
-
-      Copyright © ii-deais All Rights Reserved.
+      <div id="copyright">
+        Copyright © ii-deais All Rights Reserved.
+      </div>
     </footer>
 
   </body>
